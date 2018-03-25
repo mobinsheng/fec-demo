@@ -18,6 +18,17 @@
 
 #include "udp_server.h"
 #include "udp_client.h"
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+#include "fec.h"
+
+#ifdef __cplusplus
+}
+#endif
+#include "fec_codec.h"
+#include "packet.h"
 
 using namespace std;
 
@@ -33,6 +44,9 @@ void* client_thread(void*){
     udp_client(server_ip,port);
     return NULL;
 }
+void test_fec();
+void test_org_fec();
+
 
 int main()
 {
@@ -42,5 +56,7 @@ int main()
 
     pthread_join(t1,NULL);
     pthread_join(t2,NULL);
+
     return 0;
 }
+

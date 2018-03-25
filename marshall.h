@@ -3,6 +3,10 @@
 
 #include <vector>
 #include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <memory.h>
+#include <stdint.h>
 
 using namespace std;
 

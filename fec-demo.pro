@@ -15,9 +15,8 @@ SOURCES += main.cpp \
     udp_server.cpp \
     udp_client.cpp \
     marshall.cpp \
-    packet.cpp \
-    feccodec.cpp \
-    fec.c
+    fec.c \
+    test_fec.cpp
 
 HEADERS += \
     udp_server.h \
@@ -25,4 +24,6 @@ HEADERS += \
     fec.h \
     marshall.h \
     packet.h \
-    feccodec.h
+    fec_codec.h \
+    random_generator.h \
+    packet_queue.h
